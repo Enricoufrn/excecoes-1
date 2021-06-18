@@ -39,8 +39,9 @@ public class Program {
 			System.out.println("Unexpected error");
 		}catch(DomainException e) {
 			System.out.println("Withdraw error: "+e.getMessage());
+		}finally {
+			sc.close(); // para exemplificar o uso do bloco finally
 		}
-		sc.close();
 	}
 
 }
